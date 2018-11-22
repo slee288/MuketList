@@ -1,18 +1,20 @@
 ﻿
 
 /*-----layout-------*/
-.top,.bottom{width:100%}.top{top:0}.bottom{bottom:0}
 .background{width:100%;height:100%;z-index:-1}
 .left-sidebar,.right-sidebar{position:fixed;padding:50px 20px;height:100%;width:300px;z-index:1}.left-sidebar{left:0}.right-sidebar{right:0}
 .left-sidebar{border-radius:0px 100px 0px 0px}
-.top-bar{height:50px;margin-left:350px;margin-bottom:10px;border-radius:100px 0px 0px 100px}
-.top-bar-content{display:inline;margin:5px 5px;padding:5px 10px;font-weight:bold;float:right}
+.top-bar{height:50px;margin-left:350px;margin-bottom:10px;border-radius:0px 0px 0px 100px}
+.top-bar-content{margin:5px;padding:5px 10px;font-weight:bold;float:right}
+
+.bottom-bar{height:100px;margin-left:345px;margin-top:10px}
+
 .sidebar-title{display:block;margin:5px 10px;padding:2px 10px;font-weight:bold}
-.sidebar-content{display:block;margin:2px 10px;padding:2px 10px;font-weight:bold;}
-.main{margin-left:350px;padding:50px 20px;height:100%;width:100%;border-radius:100px 0px 0px 0px}
+.sidebar-content{display:block;margin:2px 10px;padding:2px 10px;font-weight:bold}
+.main{margin-left:345px;padding:50px 50px;border-radius:50px 0px 0px 0px}
 .deadCenter{margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
 .deadCenter-up20{margin:0;position:absolute;top:20%;left:50%;transform:translate(-50%,-50%)}
-.displayWindow{padding:50px;border-radius:10px}
+.display-window{padding:50px;border-radius:10px}
 .center-horizontal{margin:auto;width:50%}
 /*------------------*/
 
@@ -41,6 +43,11 @@
 .text-themeRed4,.hover-text-themeRed4:hover{color:#988270!important}
 .text-themeRed5,.hover-text-themeRed5:hover{color:#836853!important}
 
+.text-themeRed6,.hover-text-themeRed6:hover{color:#ff3d33!important}
+.text-themeRed7,.hover-text-themeRed7:hover{color:#f3efce!important}
+
+.text-unlined:link{text-decoration:none}
+
 .text-16{font-size:16px}
 .text-24{font-size:24px}
 .text-36{font-size:36px}
@@ -61,6 +68,11 @@
 .themeRed3,.hover-themeRed3:hover{background-color:#fdf7c2!important}
 .themeRed4,.hover-themeRed4:hover{background-color:#988270!important}
 .themeRed5,.hover-themeRed5:hover{background-color:#836853!important}
+
+.themeRed6,.hover-themeRed6:hover{background-color:#ff3d33!important}
+.themeRed7,.hover-themeRed7:hover{background-color:#f3efce!important}
+
+.themeRedGrad212,.hover-themeRedGrad212:hover{background-image:linear-gradient(#ff6961,#c23b23,#ff6961)}
 /*------------------*/
 
 /*------------------*/
