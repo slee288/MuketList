@@ -1,21 +1,39 @@
 ﻿
 
 /*-----layout-------*/
-.background{width:100%;height:100%;z-index:-1}
-.left-sidebar,.right-sidebar{position:fixed;padding:50px 20px;height:100%;width:300px;z-index:1}.left-sidebar{left:0}.right-sidebar{right:0}
+.left-sidebar,.right-sidebar{position:fixed;padding:50px 20px;height:100%;width:300px;top:0}.left-sidebar{left:0}.right-sidebar{right:0}
 .left-sidebar{border-radius:0px 100px 0px 0px}
-.top-bar{height:50px;margin-left:350px;margin-bottom:10px;border-radius:0px 0px 0px 100px}
+
+.top-bar{position:fixed;width:calc(100% - 366px);height:50px;margin-left:350px;margin-bottom:10px;border-radius:0px 0px 0px 100px;top:0}
 .top-bar-content{margin:5px;padding:5px 10px;font-weight:bold;float:right}
 
 .bottom-bar{height:100px;margin-left:345px;margin-top:10px}
+.bottom-bar-long{height:100px;margin-top:10px;border-radius:10px 10px 0px 0px}
+
 
 .sidebar-title{display:block;margin:5px 10px;padding:2px 10px;font-weight:bold}
 .sidebar-content{display:block;margin:2px 10px;padding:2px 10px;font-weight:bold}
-.main{margin-left:345px;padding:50px 50px;border-radius:50px 0px 0px 0px}
+.main{margin-top:60px;margin-left:345px;padding:50px;border-radius:50px 0px 0px 0px}
 .deadCenter{margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
 .deadCenter-up20{margin:0;position:absolute;top:20%;left:50%;transform:translate(-50%,-50%)}
 .display-window{padding:50px;border-radius:10px}
+.display-window-main{padding:50px;border-radius:0px 10px 10px 10px}
+.display-window-flat-top{padding:50px;border-radius:0px 0px 10px 10px}
+.display-window-flat-bottom{padding:50px;border-radius:10px 10px 0px 0px}
 .center-horizontal{margin:auto;width:50%}
+.tabbing{width:10%;padding:2px 10px;margin-top:25px;font-weight:bold;text-align:center}
+
+.ranking-card{width:20%;padding:10px;margin:10px}
+
+.top-banner{padding:5px;margin:60px 0px 10px 0px}
+
+.float-image{height:300px;position:fixed;border-radius:20px;top:0}
+
+.banner-image-right,.banner-image-left{height:300px;border-radius:20px}
+.banner-image-left{width:calc(20% - 10px);right:0;object-fit:scale-down;float:left}
+.banner-image-right{width:calc(80% - 10px);left:0;object-fit:cover;float:right}
+
+.main-restaurant{margin:320px 10px 0px 10px;padding:50px;border-radius:50px}
 /*------------------*/
 
 
@@ -23,12 +41,18 @@
 /*-----asthetics----*/
 .logo-superBig{text-align:center;font-size:75px;font-weight:bold}
 
+.shadow-themeRed1{box-shadow:0px 5px 20px 5px #c23b23}
+.shadow-themeRed2{box-shadow:0px 5px 20px 5px #ff6961}
+.shadow-themeRed3{box-shadow:0px 5px 20px 5px #fdf7c2}
+.shadow-themeRed4{box-shadow:0px 5px 20px 5px #988270}
+.shadow-themeRed5{box-shadow:0px 5px 20px 5px #836853}
 
+.shadow-themeGray1{box-shadow:0px 5px 20px 5px #e5e5e5}
+.shadow-themeGray3{box-shadow:0px 5px 20px 5px #d4d4d4}
+.shadow-themeGray4{box-shadow:0px 5px 20px 5px #c5c5c5}
+.shadow-themeGray5{box-shadow:0px 5px 20px 5px #797979}
 /*------------------*/
 
-
-
-/*------------------*/
 
 /*----text----*/
 .text-white,.hover-text-white:hover{color:#ffffff!important}
@@ -45,6 +69,13 @@
 
 .text-themeRed6,.hover-text-themeRed6:hover{color:#ff3d33!important}
 .text-themeRed7,.hover-text-themeRed7:hover{color:#f3efce!important}
+
+.text-themeGray1,.hover-text-themeGray1:hover{color:#e5e5e5!important}
+.text-themeGray2,.hover-text-themeGray2:hover{color:#cecece!important}
+.text-themeGray3,.hover-text-themeGray3:hover{color:#d4d4d4!important}
+.text-themeGray4,.hover-text-themeGray4:hover{color:#c5c5c5!important}
+.text-themeGray5,.hover-text-themeGray5:hover{color:#797979!important}
+
 
 .text-unlined:link{text-decoration:none}
 
@@ -71,6 +102,13 @@
 
 .themeRed6,.hover-themeRed6:hover{background-color:#ff3d33!important}
 .themeRed7,.hover-themeRed7:hover{background-color:#f3efce!important}
+
+.themeGray1,.hover-themeGray1:hover{background-color:#e5e5e5!important}
+.themeGray2,.hover-themeGray2:hover{background-color:#cecece!important}
+.themeGray3,.hover-themeGray3:hover{background-color:#d4d4d4!important}
+.themeGray4,.hover-themeGray4:hover{background-color:#c5c5c5!important}
+.themeGray5,.hover-themeGray5:hover{background-color:#797979!important}
+
 
 .themeRedGrad212,.hover-themeRedGrad212:hover{background-image:linear-gradient(#ff6961,#c23b23,#ff6961)}
 /*------------------*/
