@@ -1,6 +1,4 @@
-﻿
-
-/*-----layout-------*/
+﻿/*-----layout-------*/
 .left-sidebar,.right-sidebar{position:fixed;padding:50px 20px;height:100%;width:300px;top:0}.left-sidebar{left:0}.right-sidebar{right:0}
 .left-sidebar{border-radius:0px 100px 0px 0px}
 
@@ -9,7 +7,6 @@
 
 .bottom-bar{height:100px;margin-left:345px;margin-top:10px}
 .bottom-bar-long{height:100px;margin-top:10px;border-radius:10px 10px 0px 0px}
-
 
 .sidebar-title{display:block;margin:5px 10px;padding:2px 10px;font-weight:bold}
 .sidebar-content{display:block;margin:2px 10px;padding:2px 10px;font-weight:bold}
@@ -33,10 +30,11 @@
 .banner-image-left{width:calc(20% - 10px);right:0;object-fit:scale-down;float:left}
 .banner-image-right{width:calc(80% - 10px);left:0;object-fit:cover;float:right}
 
-.main-restaurant{margin:320px 10px 0px 10px;padding:50px;border-radius:50px}
+.main-restaurant{margin:320px 12.5% 0px;padding:50px;border-radius:20px;width:75%}
+.sub-restaurant{margin:10px;padding:50px;border-radius:20px}
+.tag-space{margin:20px 0px;padding:5px}
+.tag-button{margin:0px 5px 0px 0px;padding:10px;border-radius:20px;text-decoration:none;font-weight:bold}
 /*------------------*/
-
-
 
 /*-----asthetics----*/
 .logo-superBig{text-align:center;font-size:75px;font-weight:bold}
@@ -52,7 +50,6 @@
 .shadow-themeGray4{box-shadow:0px 5px 20px 5px #c5c5c5}
 .shadow-themeGray5{box-shadow:0px 5px 20px 5px #797979}
 /*------------------*/
-
 
 /*----text----*/
 .text-white,.hover-text-white:hover{color:#ffffff!important}
@@ -76,6 +73,8 @@
 .text-themeGray4,.hover-text-themeGray4:hover{color:#c5c5c5!important}
 .text-themeGray5,.hover-text-themeGray5:hover{color:#797979!important}
 
+.text-themePink1,.hover-text-themePink1:hover{color:#f55e61!important}
+
 
 .text-unlined:link{text-decoration:none}
 
@@ -84,6 +83,8 @@
 .text-36{font-size:36px}
 .text-48{font-size:48px}
 .text-bold{font-weight:bold}
+
+
 /*------------------*/
 
 
@@ -108,6 +109,9 @@
 .themeGray3,.hover-themeGray3:hover{background-color:#d4d4d4!important}
 .themeGray4,.hover-themeGray4:hover{background-color:#c5c5c5!important}
 .themeGray5,.hover-themeGray5:hover{background-color:#797979!important}
+
+.themePink1,.hover-themePink1:hover{background-color:#f55e61!important}
+
 
 
 .themeRedGrad212,.hover-themeRedGrad212:hover{background-image:linear-gradient(#ff6961,#c23b23,#ff6961)}
