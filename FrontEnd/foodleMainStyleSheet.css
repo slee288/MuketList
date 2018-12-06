@@ -40,6 +40,8 @@
 .main-restaurant{position:absolute;margin:0px 12.5% 0px;padding:50px;border-radius:20px;width:75%}
 .sub-restaurant{margin:250px 0px 0px 0px;padding:50px}
 
+.profile-restaurant{opacity:0;margin:10px 25%;padding:50px;border-radius:20px;width:50%}
+
 .tag-space{margin:20px 0px;padding:5px}
 .tag-button{margin:0px 5px 0px 0px;padding:10px;border-radius:20px;text-decoration:none;font-weight:bold}
 

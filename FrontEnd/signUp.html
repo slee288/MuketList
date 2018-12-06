@@ -16,24 +16,49 @@
 
 	<div class="deadCenter" style="width:20%">
 		
-		<form class="display-window themeRed3">
+		<form onsubmit="return SendInformation(event)" method="post" class="display-window themeRed3">
 			<h1 class="text-bold text-themeRed5"style="text-align:center;padding:5px">New Account</h1>
 			</br>
 			<input class="form-text border-themeRed5" type="text" name="newEmail" placeholder="Email" required>
 			<input class="form-text border-themeRed5" type="text" name="newFirstName" placeholder="First Name" required>
 			<input class="form-text border-themeRed5" type="text" name="newLastName" placeholder="Last Name" required>
 			<input class="form-text border-themeRed5" type="text" name="newUsername" placeholder="Username" required>
-			<input class="form-text border-themeRed5" type="password" name="newPassword" placeholder="Password" required>
-			<input class="form-text border-themeRed5" type="password" name="confirmNewPassword" placeholder="Confirm Password" required>
-			<input class="form-button border-themeRed5 themeRed5 text-white" type="submit" value="Create!">
+			<input id="newPassword" class="form-text border-themeRed5" type="password" name="newPassword" placeholder="Password" required>
+			<input id="confirmPassword" oninput="ConfirmPassword()" class="form-text border-themeRed5" type="password" name="confirmNewPassword" placeholder="Confirm Password" required>
+			<input id="submitBox" class="form-button border-themeRed5 themeRed5 text-white" type="submit" value="Create!">
 		</form>
 	</div>
 	
 
 
-
-
-
-
 </body>
+
+<script>
+	
+	function ConfirmPassword(){
+		if(document.getElementById("newPassword").value == document.getElementById("confirmPassword").value){
+			document.getElementById("confirmPassword").style.border = "2px solid green";
+			return true;
+		}else{
+			document.getElementById("confirmPassword").style.border  = "2px solid red";
+			return false;
+		}
+	}
+
+	function SendInformation(event){
+		if(!ConfirmPassword()){
+			event.preventDefault();
+			alert("Please make sure the passwords match");
+			return false;
+		}
+	}
+
+
+</script>
+
+
+
+
+
+
 </html>
