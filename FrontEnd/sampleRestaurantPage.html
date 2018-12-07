@@ -86,11 +86,11 @@
 		</div>
 
 		<div>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star"></span>
+			<span id="star1" class="fa fa-star"></span>
+			<span id="star2"  class="fa fa-star"></span>
+			<span id="star3"  class="fa fa-star"></span>
+			<span id="star4"  class="fa fa-star"></span>
+			<span id="star5"  class="fa fa-star"></span>
 		</div>
 
 		<div class="tag-space">
@@ -118,16 +118,70 @@
 
 	
 	<!Bottom Bar---------------------------------------------------------------------------------------->
-	<div class="bottom-bar-long themeRed5">
+	<div class="bottom-bar-long themeRed5" style="padding:20px">
 		
-		
+		<div class="fluid">
+			<div class="row">
+
+				<div class="col-lg-1">
+
+				</div>
+				
+				<div class="col-lg-4">
+
+					<div class="text-white display-window themeRed4" style="padding:20px;font-size:20px">
+						Don't see your favorite restaurant on website?</br>
+						Please send us a suggestion, and we will add your favorite restaurant ASAP!</br>
+					</div>
+					</br>
+
+					<form id="suggestionSender" method="get">
+						<div class="text-white"> Your Name </div><input type="text" name="Email" style="width:50%"></br>
+						<div class="text-white"> Restaurant Name </div><input type="text" name="Restaurant" style="width:50%"></br>
+						<div class="text-white"> Restaurant Address </div><input type="text" name="Address" style="width:80%"></br>
+						<div class="text-white"> Extra information </div><textarea type="text" rows="5" name="Extra" style="width:80%"></textarea></br>
+						<input type="submit" name="Submit" class="btn themeRed4 hover-themePink1">
+					</form>
+
+				</div>
 
 
 
+			</div>
+		</div>
 	</div>
 
 
 
 
 </body>
+
+
+<script>
+	
+	function Star(){
+		//get star rating from server here
+		var rating = 4;
+
+		var star1 = document.getElementById("star1");
+		var star2 = document.getElementById("star2");
+		var star3 = document.getElementById("star3");
+		var star4 = document.getElementById("star4");
+		var star5 = document.getElementById("star5");
+		
+		var list = [star1,star2,star3,star4,star5];
+
+		for(var i=0;i<rating;i++){
+			list[i].classList.add("checked");
+		}
+
+	}
+	window.onload = Star;
+
+
+
+</script>
+
+
+
 </html>
