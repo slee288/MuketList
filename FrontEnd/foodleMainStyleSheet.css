@@ -64,6 +64,7 @@
 .shadow-themeGray4{box-shadow:0px 5px 20px 5px #c5c5c5}
 .shadow-themeGray5{box-shadow:0px 5px 20px 5px #797979}
 
+.border-themeGray1{border:2px solid #e5e5e5}
 .border-themeRed5{border:2px solid #836853}
 
 /*------------------*/
@@ -91,6 +92,8 @@
 .text-themeGray5,.hover-text-themeGray5:hover{color:#797979}
 
 .text-themePink1,.hover-text-themePink1:hover{color:#f55e61}
+.text-themePink2,.hover-text-themePink2:hover{color:#fbbebf}
+.text-themePink3,.hover-text-themePink3:hover{color:#e0d5d5}
 
 
 .text-unlined:link{text-decoration:none}
@@ -128,8 +131,8 @@
 .themeGray5,.hover-themeGray5:hover{background-color:#797979}
 
 .themePink1,.hover-themePink1:hover{background-color:#f55e61}
-
-
+.themePink2,.hover-themePink2:hover{background-color:#fbbebf}
+.themePink3,.hover-themePink3:hover{background-color:#e0d5d5}
 
 .themeRedGrad212,.hover-themeRedGrad212:hover{background-image:linear-gradient(#ff6961,#c23b23,#ff6961)}
 
